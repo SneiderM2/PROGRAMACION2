@@ -11,6 +11,12 @@ import java.util.Scanner;
 public class Enteros1 {
     Scanner keys = new Scanner(System.in);
     int p,n,c;
-        System.out.println("ingrese en numero ");
+    
+    
+    public void mostrardatos(){
+       System.out.println("ingrese en numero ");
+    
+    }
+    
     
 }
