@@ -18,14 +18,14 @@ public class ejercicio1 {
         // TODO code application logic here
         Scanner sc = new Scanner (System.in);
         int n,j;
-        System.out.println("ingrese el numero queira su tabla de multiplicar " );
+        System.out.println("ingrese el numero quiera su tabla de multiplicar " );
         n = sc.nextInt();   // se toma el dato introducido por teclado
         System.out.println("tabla de multiplicar el numero "+n );
         while(n<0){
             System.out.println("ingrese un numero positivo ");
             n = sc.nextInt();  
         }
-        for(int i=1; i<=20; i++){
+        for(int i=1; i<=10; i++){
             j=i*n;
             System.out.println(n+"X"+i+"="+j);
         }
