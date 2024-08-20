@@ -25,10 +25,10 @@ public class Maincalcu {
         System.out.print("Ingresa el segundo número: ");
         double numero2 = num.nextDouble();
 
-        // Crear una instancia de Calculadora
+        // objeto
         calculadora calc = new calculadora(numero1, numero2);
 
-        // Realizar y mostrar las operaciones
+        
         System.out.println("Suma: " + calc.sumar());
         System.out.println("Resta: " + calc.restar());
         System.out.println("Multiplicación: " + calc.multiplicar());
