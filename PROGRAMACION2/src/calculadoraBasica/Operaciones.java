@@ -8,12 +8,12 @@ package calculadoraBasica;
  * @author neiga
  */
 
-    public class calculadora {
+    public class Operaciones {
     private double n1;
     private double n2;
 
     // Constructor
-    public calculadora(double n1, double n2) {
+    public Operaciones(double n1, double n2) {
         this.n1 = n1;
         this.n2 = n2;
     }

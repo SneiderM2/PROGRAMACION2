@@ -26,7 +26,7 @@ public class Maincalcu {
         double n2 = num.nextDouble();
 
         // objeto
-        calculadora calc = new calculadora(n1, n2);
+        Operaciones calc = new Operaciones(n1, n2);
 
         
         System.out.println("Suma: " + calc.sumar());
