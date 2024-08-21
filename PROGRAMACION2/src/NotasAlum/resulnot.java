@@ -19,7 +19,7 @@ public class resulnot {
         int nAlumnos = 15;
         int numEvalu = 1; // Una evaluación en este caso
 
-        // w instancia de la clase Notas
+        //instancia de la clase Notas
         Notas Notas = new Notas(nAlumnos, numEvalu);
 
         Notas.ingresarNotas();
