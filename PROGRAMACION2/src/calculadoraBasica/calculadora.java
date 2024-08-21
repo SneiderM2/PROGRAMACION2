@@ -13,9 +13,9 @@ package calculadoraBasica;
     private double n2;
 
     // Constructor
-    public calculadora(double numero1, double numero2) {
-        this.n1 = numero1;
-        this.n2 = numero2;
+    public calculadora(double n1, double n2) {
+        this.n1 = n1;
+        this.n2 = n2;
     }
 
     // Método para sumar

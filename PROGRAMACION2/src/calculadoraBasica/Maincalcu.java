@@ -20,13 +20,13 @@ public class Maincalcu {
 
         // Solicitar al usuario que ingrese los números
         System.out.print("Ingresa el primer número: ");
-        double numero1 = num.nextDouble();
+        double n1 = num.nextDouble();
 
         System.out.print("Ingresa el segundo número: ");
-        double numero2 = num.nextDouble();
+        double n2 = num.nextDouble();
 
         // objeto
-        calculadora calc = new calculadora(numero1, numero2);
+        calculadora calc = new calculadora(n1, n2);
 
         
         System.out.println("Suma: " + calc.sumar());
