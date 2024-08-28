@@ -25,19 +25,19 @@ public class AsignarModelos {
        for(int id : numIdentidad){
            int ultimoDigito = id % 10;
            switch(ultimoDigito){
-                case 1: case 6:
+                case 1, 6:
                    modelo1++;
                    break;
-                case 2: case 7:
+                case 2, 7:
                    modelo2++;
                    break;
-                case 3: case 8:
+                case 3, 8:
                    modelo3++;
                    break;
-                case 4: case 9:
+                case 4, 9:
                    modelo4++;
                    break;
-                case 5: case 0:
+                case 5, 0:
                    modelo5++;
                    break;
                 default:
