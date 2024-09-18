@@ -39,7 +39,7 @@ public class DocenteTC01 extends Docente1 {
     
     @Override
     public void CalcularSueldo(){
-        
+        SueldoMensual = SueldoBasico + (CanTrabGrado * ValorHoraAsesor * AsesoriaDoc);
     }
 
     public double getSueldoMensual() {

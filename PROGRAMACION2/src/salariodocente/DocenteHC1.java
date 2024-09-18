@@ -31,7 +31,7 @@ public class DocenteHC1 extends Docente1{
     
     @Override
     public void CalcularSueldo(){
-        
+        SueldoMesHora = HorasTrab * Valorhora;
     }
     
     public double getSueldoMesHora() {
