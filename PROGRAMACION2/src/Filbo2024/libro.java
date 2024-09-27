@@ -8,49 +8,47 @@ package Filbo2024;
  *
  * @author neiga
  */
-abstract class libro {
+abstract class Libro {
     
-    protected String Titulo;
-    protected String Autor;
-    protected double Precio;
+    protected String titulo;
+    protected String autor;
+    protected double precio;
 
-    public libro(String titulo, String autor, double precio) {
-        this.Titulo = titulo;
-        this.Autor = autor;
-        this.Precio = precio;
+    public Libro(String titulo, String autor, double precio) {
+        this.titulo = titulo;
+        this.autor = autor;
+        this.precio = precio;
     }
 
     public void setTitulo(String titulo) {
-        this.Titulo = titulo;
+        this.titulo = titulo;
     }
 
     public void setAutor(String autor) {
-        this.Autor = autor;
+        this.autor = autor;
     }
 
     public void setPrecio(double precio) {
-        this.Precio = precio;
+        this.precio = precio;
     }
 
     public String getTitulo() {
-        return Titulo;
+        return titulo;
     }
 
     public String getAutor() {
-        return Autor;
+        return autor;
     }
 
     public double getPrecio() {
-        return Precio;
+        return precio;
     }
     
-    abstract void CalcularDescuento();
+    abstract void calcularDescuento();
     
-    
-      @Override
-    public String toString(){
-        return Titulo+" "+Autor+" "+Precio;
+    @Override
+    public String toString() {
+        return "Título: " + titulo + ", Autor: " + autor + ", Precio: $" + precio;
     }
-    
-    
 }
+

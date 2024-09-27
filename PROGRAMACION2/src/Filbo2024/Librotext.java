@@ -8,40 +8,35 @@ package Filbo2024;
  *
  * @author neiga
  */
-public class Librotext extends libro{
+class LibroText extends Libro {
     
-    private String Curso;
+    private String curso;
     private double descuento;
 
-    public Librotext(String titulo, String autor, double precio, String Curso,double descuento) {
+    public LibroText(String titulo, String autor, double precio, String curso) {
         super(titulo, autor, precio);
-        this.Curso = Curso;
-        this.descuento = descuento;
+        this.curso = curso;
     }
 
-    public void setCurso(String Curso) {
-        this.Curso = Curso;
+    public void setCurso(String curso) {
+        this.curso = curso;
     }
 
     public String getCurso() {
-        return Curso;
+        return curso;
     }
     
     @Override
-    public void Calculardescuento(){
-        
-        descuento = (Precio*0.40);
+    public void calcularDescuento() {
+        descuento = precio * 0.40;
     }
 
-    public void setDescuento(double descuento) {
-        this.descuento = descuento;
-    }
-    
-    
     public double getDescuento() {
         return descuento;
     }
-    
-    
-    
+
+    @Override
+    public String toString() {
+        return super.toString() + ", Curso: " + curso + ", Precio con descuento: $" + (precio - descuento);
+    }
 }

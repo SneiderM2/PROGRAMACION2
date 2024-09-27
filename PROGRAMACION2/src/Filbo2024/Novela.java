@@ -8,33 +8,35 @@ package Filbo2024;
  *
  * @author neiga
  */
-public class Novela extends libro{
+class Novela extends Libro {
     
-    private String tiponove;
+    private String tipoNovela;
     private double descuento;
 
-    public Novela( String titulo, String autor, double precio, String tiponove, double descuento) {
+    public Novela(String titulo, String autor, double precio, String tipoNovela) {
         super(titulo, autor, precio);
-        this.tiponove = tiponove;
-        this.descuento = descuento;
+        this.tipoNovela = tipoNovela;
     }
 
-    public void setTiponove(String tiponove) {
-        this.tiponove = tiponove;
+    public void setTipoNovela(String tipoNovela) {
+        this.tipoNovela = tipoNovela;
     }
 
-    public String getTiponove() {
-        return tiponove;
+    public String getTipoNovela() {
+        return tipoNovela;
     }
     
-    public void Calculardescuendo(){
-        
-        descuento = (Precio*0.15);
+    @Override
+    public void calcularDescuento() {
+        descuento = precio * 0.15;
     }
 
     public double getDescuento() {
         return descuento;
     }
-    
-    
+
+    @Override
+    public String toString() {
+        return super.toString() + ", Tipo de novela: " + tipoNovela + ", Precio con descuento: $" + (precio - descuento);
+    }
 }
