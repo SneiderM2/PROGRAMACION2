@@ -23,7 +23,7 @@ public class controlador {
             System.out.println("3. Novela");
             System.out.println("4. Salir");
             tipo = sc.nextInt();
-            sc.nextLine();  // Consumir nueva línea
+            sc.nextLine();  
             
             switch (tipo) {
                 case 1:
@@ -33,7 +33,7 @@ public class controlador {
                     String autorTexto = sc.nextLine();
                     System.out.println("Ingrese el precio del libro de texto: ");
                     double precioTexto = sc.nextDouble();
-                    sc.nextLine();  // Consumir nueva línea
+                    sc.nextLine();  
                     System.out.println("Ingrese el curso asociado al libro de texto: ");
                     String curso = sc.nextLine();
                     
@@ -49,7 +49,7 @@ public class controlador {
                     String autorInves = sc.nextLine();
                     System.out.println("Ingrese el precio del libro de investigación: ");
                     double precioInves = sc.nextDouble();
-                    sc.nextLine();  // Consumir nueva línea
+                    sc.nextLine();  
                     System.out.println("Ingrese la facultad que publicó el libro: ");
                     String facultad = sc.nextLine();
                     
@@ -65,7 +65,7 @@ public class controlador {
                     String autorNovela = sc.nextLine();
                     System.out.println("Ingrese el precio de la novela: ");
                     double precioNovela = sc.nextDouble();
-                    sc.nextLine();  // Consumir nueva línea
+                    sc.nextLine();  
                     System.out.println("Ingrese el tipo de novela (histórica, romántica, policíaca, etc.): ");
                     String tipoNovela = sc.nextLine();
                     
@@ -82,6 +82,7 @@ public class controlador {
                     System.out.println("Opción no válida.");
             }
         } while (tipo != 4);
+        
         
         System.out.println("\n--- Libros registrados en FILBO2024 ---");
         for (Libro libro : libros) {
