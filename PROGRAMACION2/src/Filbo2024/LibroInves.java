@@ -9,7 +9,6 @@ package Filbo2024;
  * @author neiga
  */
 class LibroInves extends Libro {
-    
     private String facultad;
     private double descuento;
 
@@ -18,21 +17,9 @@ class LibroInves extends Libro {
         this.facultad = facultad;
     }
 
-    public void setFacultad(String facultad) {
-        this.facultad = facultad;
-    }
-
-    public String getFacultad() {
-        return facultad;
-    }
-    
     @Override
     public void calcularDescuento() {
         descuento = precio * 0.25;
-    }
-
-    public double getDescuento() {
-        return descuento;
     }
 
     @Override

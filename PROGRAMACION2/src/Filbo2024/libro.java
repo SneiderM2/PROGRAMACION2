@@ -9,7 +9,6 @@ package Filbo2024;
  * @author neiga
  */
 abstract class Libro {
-    
     protected String titulo;
     protected String autor;
     protected double precio;
@@ -20,35 +19,10 @@ abstract class Libro {
         this.precio = precio;
     }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
-    }
+    abstract void calcularDescuento();  
 
-    public void setAutor(String autor) {
-        this.autor = autor;
-    }
-
-    public void setPrecio(double precio) {
-        this.precio = precio;
-    }
-
-    public String getTitulo() {
-        return titulo;
-    }
-
-    public String getAutor() {
-        return autor;
-    }
-
-    public double getPrecio() {
-        return precio;
-    }
-    
-    abstract void calcularDescuento();
-    
     @Override
     public String toString() {
         return "Título: " + titulo + ", Autor: " + autor + ", Precio: $" + precio;
     }
 }
-

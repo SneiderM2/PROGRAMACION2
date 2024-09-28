@@ -9,7 +9,6 @@ package Filbo2024;
  * @author neiga
  */
 class LibroText extends Libro {
-    
     private String curso;
     private double descuento;
 
@@ -18,21 +17,9 @@ class LibroText extends Libro {
         this.curso = curso;
     }
 
-    public void setCurso(String curso) {
-        this.curso = curso;
-    }
-
-    public String getCurso() {
-        return curso;
-    }
-    
     @Override
     public void calcularDescuento() {
         descuento = precio * 0.40;
-    }
-
-    public double getDescuento() {
-        return descuento;
     }
 
     @Override

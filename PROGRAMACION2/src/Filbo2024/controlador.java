@@ -4,18 +4,16 @@
  */
 package Filbo2024;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class controlador {
 
     public static void main(String[] args) {
-        
         Scanner sc = new Scanner(System.in);
-        ArrayList<Libro> libros = new ArrayList<>();
-        
+        Libro libro = null;  // Un solo objeto libro
+
         int tipo;
-        
+
         do {
             System.out.println("Calcular descuento del tipo de libro en FILBO2024: ");
             System.out.println("1. Libro de texto");
@@ -23,7 +21,7 @@ public class controlador {
             System.out.println("3. Novela");
             System.out.println("4. Salir");
             tipo = sc.nextInt();
-            sc.nextLine();  
+            sc.nextLine();
             
             switch (tipo) {
                 case 1:
@@ -33,13 +31,13 @@ public class controlador {
                     String autorTexto = sc.nextLine();
                     System.out.println("Ingrese el precio del libro de texto: ");
                     double precioTexto = sc.nextDouble();
-                    sc.nextLine();  
+                    sc.nextLine();
                     System.out.println("Ingrese el curso asociado al libro de texto: ");
                     String curso = sc.nextLine();
                     
-                    LibroText libroText = new LibroText(tituloTexto, autorTexto, precioTexto, curso);
-                    libroText.calcularDescuento();
-                    libros.add(libroText);
+                    
+                    libro = new LibroText(tituloTexto, autorTexto, precioTexto, curso);
+                    libro.calcularDescuento();
                     break;
                     
                 case 2:
@@ -53,9 +51,9 @@ public class controlador {
                     System.out.println("Ingrese la facultad que publicó el libro: ");
                     String facultad = sc.nextLine();
                     
-                    LibroInves libroInves = new LibroInves(tituloInves, autorInves, precioInves, facultad);
-                    libroInves.calcularDescuento();
-                    libros.add(libroInves);
+                    
+                    libro = new LibroInves(tituloInves, autorInves, precioInves, facultad);
+                    libro.calcularDescuento();
                     break;
                     
                 case 3:
@@ -65,28 +63,29 @@ public class controlador {
                     String autorNovela = sc.nextLine();
                     System.out.println("Ingrese el precio de la novela: ");
                     double precioNovela = sc.nextDouble();
-                    sc.nextLine();  
+                    sc.nextLine();  // Consumir nueva línea
                     System.out.println("Ingrese el tipo de novela (histórica, romántica, policíaca, etc.): ");
                     String tipoNovela = sc.nextLine();
                     
-                    Novela novela = new Novela(tituloNovela, autorNovela, precioNovela, tipoNovela);
-                    novela.calcularDescuento();
-                    libros.add(novela);
+                    
+                    libro = new Novela(tituloNovela, autorNovela, precioNovela, tipoNovela);
+                    libro.calcularDescuento();
                     break;
                     
                 case 4:
-                    System.out.println("Saliendo...");
+                    System.out.println("Saliendo.");
                     break;
                     
                 default:
                     System.out.println("Opción no válida.");
             }
+
+            // 
+            if (libro != null) {
+                System.out.println("\n--- Libro registrado ---");
+                System.out.println(libro);
+            }
+            
         } while (tipo != 4);
-        
-        
-        System.out.println("\n--- Libros registrados en FILBO2024 ---");
-        for (Libro libro : libros) {
-            System.out.println(libro);
-        }
     }
 }

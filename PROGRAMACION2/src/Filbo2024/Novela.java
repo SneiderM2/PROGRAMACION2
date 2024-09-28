@@ -9,7 +9,6 @@ package Filbo2024;
  * @author neiga
  */
 class Novela extends Libro {
-    
     private String tipoNovela;
     private double descuento;
 
@@ -18,21 +17,9 @@ class Novela extends Libro {
         this.tipoNovela = tipoNovela;
     }
 
-    public void setTipoNovela(String tipoNovela) {
-        this.tipoNovela = tipoNovela;
-    }
-
-    public String getTipoNovela() {
-        return tipoNovela;
-    }
-    
     @Override
     public void calcularDescuento() {
         descuento = precio * 0.15;
-    }
-
-    public double getDescuento() {
-        return descuento;
     }
 
     @Override
