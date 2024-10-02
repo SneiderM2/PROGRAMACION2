@@ -10,25 +10,25 @@ package Asociacion1;
  */
 public class Cargo {
     
-    private String codigoCargo;
-    private String nombreCargo;
-    private double salario;
+    private String cod_Cargo;
+    private String nom_Cargo;
+    private double Sueldo;
 
     public Cargo(String codigoCargo, String nombreCargo, double salario) {
-        this.codigoCargo = codigoCargo;
-        this.nombreCargo = nombreCargo;
-        this.salario = salario;
+        this.cod_Cargo = codigoCargo;
+        this.nom_Cargo = nombreCargo;
+        this.Sueldo = salario;
     }
 
-    public double getSalario() {
-        return salario;
+    public double getSueldo() {
+        return Sueldo;
     }
 
-    public String getNombreCargo() {
-        return nombreCargo;
+    public String getNom_Cargo() {
+        return nom_Cargo;
     }
 
     public String getCodigoCargo() {
-        return codigoCargo;
+        return cod_Cargo;
     }
 }

@@ -10,20 +10,20 @@ package Asociacion1;
  */
 public class Municipio {
     
-    private String codigoMunicipio;
-    private String nombreMunicipio;
+    private String cod_Municipio;
+    private String nom_Municipio;
 
-    public Municipio(String codigoMunicipio, String nombreMunicipio) {
-        this.codigoMunicipio = codigoMunicipio;
-        this.nombreMunicipio = nombreMunicipio;
+    public Municipio(String cod_Municipio, String nom_Municipio) {
+        this.cod_Municipio = cod_Municipio;
+        this.nom_Municipio = nom_Municipio;
     }
 
-    public String getNombreMunicipio() {
-        return nombreMunicipio;
+    public String getNom_Municipio() {
+        return nom_Municipio;
     }
 
-    public String getCodigoMunicipio() {
-        return codigoMunicipio;
+    public String getCod_Municipio() {
+        return cod_Municipio;
     }
     
 }

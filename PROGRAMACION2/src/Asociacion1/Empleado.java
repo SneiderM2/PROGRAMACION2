@@ -25,9 +25,9 @@ public class Empleado {
 
     public void mostrarInformacion() {
         System.out.println("Nombre del Empleado: " + this.nombre + " " + this.apellido);
-        System.out.println("Vive en el municipio de: " + this.municipio.getNombreMunicipio());
-        System.out.println("Cargo: " + this.cargo.getNombreCargo());
-        System.out.println("Salario: $" + this.cargo.getSalario());
+        System.out.println("Vive en el municipio de: " + this.municipio.getNom_Municipio());
+        System.out.println("Cargo: " + this.cargo.getNom_Cargo());
+        System.out.println("Salario: $" + this.cargo.getSueldo());
     }
     
 }
